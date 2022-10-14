@@ -17,7 +17,8 @@ import {
   Sign,
   Media,
   Area,
-  Link
+  Link,
+  TextFooter
 }
 from './styles';
 import {FaFacebook, FaYoutube, FaInstagram, FaTwitter, FaTiktok} from "react-icons/fa";
@@ -45,32 +46,36 @@ function App() {
 
         </TextArea>
       </Area>
+      
       <Video>
 
       </Video>
 
       <Footer>
 
-        <TitleNews>Seja o primeiro a saber das novidades</TitleNews>
-        <DescriptionNews>Inscrevendo-se abaixo será avisado sempre
-                         sobre às novidades no desenvolvimento da
-                        nossa plataforma e a receber conteúdos
-                         produzidos por nós
-        </DescriptionNews>
+          <TextFooter>
 
-        <Sign>
-          <Input type="text"/>
-          <Submit type="submit" value="Send"/>
-        </Sign>
+          <TitleNews>Seja o primeiro a saber das novidades</TitleNews>
+          <DescriptionNews>Inscrevendo-se abaixo será avisado sempre
+                          sobre às novidades no desenvolvimento da
+                          nossa plataforma e a receber conteúdos
+                          produzidos por nós
+          </DescriptionNews>
 
-        <Media>
-            <Link href="#"><FaFacebook/></Link>
-            <Link href="#"><FaTwitter/></Link>
-            <Link href="#"><FaInstagram/></Link>
-            <Link href="#"><FaYoutube/></Link>
-            <Link href="#"><FaTiktok/></Link>
-  
-        </Media>
+          <Sign>
+            <Input type="text"/>
+            <Submit type="submit" value="Send" placehoder="Escreva uma mensagem para nós" />
+          </Sign>
+
+          <Media>
+              <Link href="#"><FaFacebook/></Link>
+              <Link href="#"><FaTwitter/></Link>
+              <Link href="#"><FaInstagram/></Link>
+              <Link href="#"><FaYoutube/></Link>
+              <Link href="#"><FaTiktok/></Link>
+    
+          </Media>
+        </TextFooter>
 
       </Footer>
 

@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
 
     width: 100%;
+    height:100%;
     display: flex;
     flex-direction:column;
    
@@ -12,18 +13,17 @@ export const Header = styled.nav`
 
     width: 100%;
     height:3rem;
-    display: flex;
     margin:0;
     margin-bottom: 15px;
+    display:flex;
+    flex-direction: column;
 
     @media screen and (max-width: 680px) {
-        height:10px;
-        background:red;
-        margin-bottom: 0px;
+        height:4rem;
         
     }
     @media screen and (max-width: 780px) {
-        height:8rem;
+        height:5rem;
         
     }
 
@@ -55,6 +55,16 @@ export const Area = styled.section`
     flex-direction:column;
     margin-bottom: 15px;
 
+    @media screen and (max-width: 680px) {
+        height:14rem;
+        margin:0;
+        
+    }
+    @media screen and (max-width: 780px) {
+        
+        
+    }
+
 
 `;
 
@@ -70,13 +80,12 @@ export const TextArea = styled.div`
     align-items:center;
 
     @media screen and (max-width: 680px) {
-        width: 100%;
-        height:20rem;
+
+        width:100%;
         
     }
     @media screen and (max-width: 780px) {
-        width: 60%;
-        height:10rem;
+        
         
     }
 
@@ -88,6 +97,16 @@ export const Title = styled.h1`
     margin-bottom: 15px;
     color: #1c1c1e;
     font-weight:600;
+
+    @media screen and (max-width: 680px) {
+        height:12rem;
+        margin:0;
+        
+    }
+    @media screen and (max-width: 780px) {
+        
+        
+    }
 
 `;
 export const Description = styled.p`
@@ -109,6 +128,13 @@ export const Button = styled.button`
     padding: 9px;
     cursor:pointer;
 
+    @media screen and (max-width: 680px) {
+        width:66%;
+    }
+    @media screen and (max-width: 900px) {
+        width:54%;
+    }
+
 `;
 
 export const Click = styled.a`
@@ -127,9 +153,35 @@ export const Video= styled.section`
     background:#909090;
     margin-bottom: 15px;
 
+    @media screen and (max-width: 680px) {
+        width:100%;
+        height:15rem;
+        
+    }
+
 `;
 
 export const Footer= styled.footer`
+
+    width:100%;
+    height:17rem;
+    display: flex;
+    flex-direction:column;
+
+    @media screen and (max-width: 680px) {
+        
+        height:17rem;
+        
+    }
+    @media screen and (max-width: 780px) {
+    
+        
+    }
+
+
+`;
+
+export const TextFooter= styled.div`
 
     width:50%;
     height:12rem;
@@ -140,13 +192,9 @@ export const Footer= styled.footer`
     align-items:center;
 
     @media screen and (max-width: 680px) {
-        width: 100%;
+
+        width:100%;
         height:20rem;
-        
-    }
-    @media screen and (max-width: 780px) {
-        width: 60%;
-        height:10rem;
         
     }
 
@@ -178,6 +226,11 @@ export const Input= styled.input`
     width:35%;
     padding:4px;
 
+    @media screen and (max-width: 680px) {
+        width:74%;
+        
+    }
+
 `;
 export const Submit= styled.input`
 
@@ -187,6 +240,15 @@ export const Submit= styled.input`
     color:#fff;
     padding:6px;
     cursor:pointer;
+
+    @media screen and (max-width: 680px) {
+        width:26%;
+        
+    }
+    @media screen and (max-width: 780px) {
+        width:36%;
+        
+    }
 
 `;
 
@@ -211,6 +273,12 @@ export const Link= styled.a`
     font-size:1.8rem;
     text-align:center;
     margin-right: 1.5rem;
+
+    @media screen and (max-width: 680px) {
+        font-size:1.2rem;
+        margin-right: 1rem;
+        
+    }
 
 `;
 
