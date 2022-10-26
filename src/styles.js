@@ -100,11 +100,12 @@ export const Title = styled.h1`
         height:12rem;
         margin:0;
         font-size: 1.3rem;
-        margin-bottom: 1px;
+        margin-bottom:3px;
         
     }
     @media screen and (max-width: 780px) {
         
+        margin-bottom:3px;
         
     }
 
@@ -132,7 +133,7 @@ export const Button = styled.button`
        
     }
     @media screen and (max-width: 900px) {
-        width:56.5%;
+        width:55%;
     }
     
 
@@ -149,10 +150,14 @@ export const Video= styled.section`
 
     width:70%;
     height:30rem;
+    display:flex;
     margin:0;
     margin:0 auto;
-    background:#909090;
+    background: url('./images/karting.jpg');
+    background-size:cover;
     margin-bottom: 15px;
+    justify-content:center;
+    align-items:center;
 
     @media screen and (max-width: 680px) {
         width:100%;
@@ -161,7 +166,20 @@ export const Video= styled.section`
     }
 
 `;
+export const LinkVideo= styled.a`
 
+    text-decoration:none;
+    color:#fff;
+    font-size:90px;
+
+    @media screen and (max-width: 680px) {
+        font-size:50px;
+    }
+    @media screen and (max-width: 780px) {
+        font-size:60px;
+    }
+
+`;
 export const Footer= styled.footer`
 
     width:100%;
@@ -228,7 +246,7 @@ export const Input= styled.input`
     padding:4px;
 
     @media screen and (max-width: 680px) {
-        width:74%;
+        width:60%;
         
     }
 
@@ -243,11 +261,11 @@ export const Submit= styled.input`
     cursor:pointer;
 
     @media screen and (max-width: 680px) {
-        width:26%;
+        width:30%;
         
     }
     @media screen and (max-width: 780px) {
-        width:36%;
+        width:30%;
         
     }
 

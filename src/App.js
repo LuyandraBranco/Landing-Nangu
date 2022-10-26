@@ -21,10 +21,12 @@ import {
   Media,
   Area,
   Link,
-  TextFooter
+  TextFooter,
+  LinkVideo
 }
 from './styles';
 import {FaFacebook, FaYoutube, FaInstagram, FaTwitter, FaTiktok} from "react-icons/fa";
+import {AiOutlinePlayCircle} from "react-icons/ai";
 
 function App() {
   return (
@@ -51,7 +53,7 @@ function App() {
       </Area>
       
       <Video>
-
+        <LinkVideo href='https://youtu.be/lxix1uPeY2s'><AiOutlinePlayCircle/></LinkVideo>
       </Video>
 
       <Footer>
