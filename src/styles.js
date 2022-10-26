@@ -92,16 +92,14 @@ export const Title = styled.h1`
 
     text-align:center;
     margin:0;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     color: #1c1c1e;
     font-weight:600;
 
     @media screen and (max-width: 680px) {
         height:12rem;
-        margin:0;
-        font-size: 1.3rem;
-        margin-bottom:3px;
-        
+        margin-bottom:0;
+        font-size: 1.3rem; 
     }
     @media screen and (max-width: 780px) {
         

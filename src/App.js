@@ -69,7 +69,7 @@ function App() {
 
           <Sign>
             <Input type="text"/>
-            <Submit type="submit" value="Send" placehoder="Escreva uma mensagem para nós" />
+            <Submit type="submit" value="Send"/>
           </Sign>
 
           <Media>
