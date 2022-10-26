@@ -73,12 +73,11 @@ function App() {
           </Sign>
 
           <Media>
-              <Link href="#"><FaFacebook/></Link>
+              <Link href="https://www.facebook.com/profile.php?id=100086874926716"><FaFacebook/></Link>
               <Link href="https://twitter.com/nangu_turismo?s=21&t=67JLXfk0YRLPFejOk-2BwA"><FaTwitter/></Link>
               <Link href="https://instagram.com/nangu.turismo?igshid=YmMyMTA2M2Y="><FaInstagram/></Link>
-              <Link href="#"><FaYoutube/></Link>
+              <Link href="https://www.youtube.com/channel/UCMUfEucOpzSFH3f9NoCu6tw"><FaYoutube/></Link>
               <Link href="https://www.tiktok.com/@nanguturismo?_t=8WpwW5qaX4A&_r=1"><FaTiktok/></Link>
-    
           </Media>
         </TextFooter>
 
