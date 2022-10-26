@@ -1,3 +1,6 @@
+import { useState } from 'react';
+// import MailchimpSubscribe from 'react-mailchimp-subscribe';
+
 import {
   Container,
   Header,
@@ -29,7 +32,7 @@ function App() {
 
       <Header>
         <Figures>
-          <Logo scr="" alt="logo Nangu"/>
+          <Logo src="./images/logo.png" alt="logo Nangu"/>
         </Figures>
 
       </Header>
@@ -69,10 +72,10 @@ function App() {
 
           <Media>
               <Link href="#"><FaFacebook/></Link>
-              <Link href="#"><FaTwitter/></Link>
-              <Link href="#"><FaInstagram/></Link>
+              <Link href="https://twitter.com/nangu_turismo?s=21&t=67JLXfk0YRLPFejOk-2BwA"><FaTwitter/></Link>
+              <Link href="https://instagram.com/nangu.turismo?igshid=YmMyMTA2M2Y="><FaInstagram/></Link>
               <Link href="#"><FaYoutube/></Link>
-              <Link href="#"><FaTiktok/></Link>
+              <Link href="https://www.tiktok.com/@nanguturismo?_t=8WpwW5qaX4A&_r=1"><FaTiktok/></Link>
     
           </Media>
         </TextFooter>
@@ -82,5 +85,4 @@ function App() {
     </Container>
   );
 }
-
 export default App;

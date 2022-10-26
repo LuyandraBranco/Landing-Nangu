@@ -34,7 +34,6 @@ export const Figures = styled.figure`
     width:105px;
     height:30px;
     margin-top:20px;
-    background:#909090;
 
 `;
 
@@ -43,7 +42,6 @@ export const Logo = styled.img`
     width:100%;
     height:100%;
     object-fit:cover;
-
 
 `;
 
@@ -101,6 +99,8 @@ export const Title = styled.h1`
     @media screen and (max-width: 680px) {
         height:12rem;
         margin:0;
+        font-size: 1.3rem;
+        margin-bottom: 1px;
         
     }
     @media screen and (max-width: 780px) {
@@ -129,11 +129,12 @@ export const Button = styled.button`
     cursor:pointer;
 
     @media screen and (max-width: 680px) {
-        width:66%;
+       
     }
     @media screen and (max-width: 900px) {
-        width:54%;
+        width:56.5%;
     }
+    
 
 `;
 
