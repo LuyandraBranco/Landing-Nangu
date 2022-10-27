@@ -53,7 +53,7 @@ function App() {
       </Area>
       
       <Video>
-        <LinkVideo href='https://youtu.be/lxix1uPeY2s'><AiOutlinePlayCircle/></LinkVideo>
+        <LinkVideo href='https://vm.tiktok.com/ZMFBs5Ggc/'><AiOutlinePlayCircle/></LinkVideo>
       </Video>
 
       <Footer>
