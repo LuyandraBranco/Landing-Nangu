@@ -124,7 +124,7 @@ export const Button = styled.button`
     cursor:pointer;
 
     @media screen and (max-width: 680px) {
-       
+        width:45%;
     }
     @media screen and (max-width: 900px) {
         width:55%;
@@ -158,7 +158,11 @@ export const Video= styled.section`
         height:15rem;
         
     }
-
+    
+    @media screen and (max-width: 780px) {
+        margin: 10px 0;
+        
+    }
 `;
 export const LinkVideo= styled.a`
 
@@ -253,6 +257,7 @@ export const Submit= styled.input`
     color:#fff;
     padding:6px;
     cursor:pointer;
+    border-radius:7px;
 
     @media screen and (max-width: 680px) {
         width:30%;
@@ -271,7 +276,14 @@ export const Sign= styled.section`
     display:flex;
     justify-content:center;
     align-items:center;
+    flex-wrap: wrap; 
+    gap: 8px;
 
+    > div {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
 
 `;
 export const Media= styled.section`

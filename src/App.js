@@ -1,5 +1,7 @@
 import { useState } from 'react';
 // import MailchimpSubscribe from 'react-mailchimp-subscribe';
+import MailchimpSubscribe from 'react-mailchimp-subscribe';
+
 
 import {
   Container,
@@ -28,7 +30,50 @@ from './styles';
 import {FaFacebook, FaYoutube, FaInstagram, FaTwitter, FaTiktok} from "react-icons/fa";
 import {AiOutlinePlayCircle} from "react-icons/ai";
 
+const CustomForm = ({ status, message, onValidated }) => {
+  const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+
+  const submit = () =>
+    email &&
+    name &&
+    email.indexOf('@') > -1 &&
+    onValidated({
+      MERGE0: email,
+      MERGE1: name,
+    });
+
+  return (
+    <Sign>
+      {status === 'sending' && <div style={{ color: 'blue' }}>sending...</div>}
+      {status === 'error' && (
+        <div
+          style={{ color: 'red' }}
+          dangerouslySetInnerHTML={{ __html: message }}
+        />
+      )}
+      {status === 'success' && (
+        <div
+          style={{ color: 'green' }}
+          dangerouslySetInnerHTML={{ __html: message }}
+        />
+      )}
+      <div>
+      <Input type="text" placeholder="Seu nome" onChange={event => setName(event.target.value)}/> 
+      
+      <Input type="email" placeholder="Seu melhor email" onChange={event => setEmail(event.target.value)}/> 
+      
+      </div>
+      <Submit type="submit" value="Subscrever" onClick={submit}/>
+       
+    </Sign>
+  );
+};
+
 function App() {
+  const url =
+  'https://gmail.us9.list-manage.com/subscribe/post?u=17f9b6aca25ceb49fa8bae0aa&id=0a1782f3be';
+
   return (
     <Container>
 
@@ -67,10 +112,18 @@ function App() {
                           produzidos por nós
           </DescriptionNews>
 
-          <Sign>
-            <Input type="text"/>
-            <Submit type="submit" value="Send"/>
-          </Sign>
+          
+          <MailchimpSubscribe
+        url={url}
+        render={({ subscribe, status, message }) => (
+          <CustomForm 
+            status={status}
+            message={message}
+            onValidated={formData => subscribe(formData)}
+          />
+        )}
+      />
+          
 
           <Media>
               <Link href="https://www.facebook.com/profile.php?id=100086874926716"><FaFacebook/></Link>
